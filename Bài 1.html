@@ -6,9 +6,16 @@
 </head>
 <body>
 <script>
-    function Solve_the_equation(a,b){
-    let x = -b/a;
-    return x;
+    function Solve_the_equation(a,b) {
+        if (a == 0) {
+            if (b !== 0) {
+                return "KHông phải pt bậc nất "
+            } else {
+                return " vô số nghiệm"
+            }
+        } else {
+            return x = -b / a;
+        }
     }
     let result = Solve_the_equation(5,8);
     document.write(result);
