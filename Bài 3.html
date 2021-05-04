@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let str=prompt('Nhập chuỗi: ');
+    let arr=str.split("");
+    document.write(arr +'<br/>');
+    let nguyen_am=['a','o','e','u','i'];
+    function countVowel(array) {
+        let count=0;
+        for (let i=0;i<array.length;i++) {
+            for (let j=0;j<nguyen_am.length;j++) {
+                if(array[i]==nguyen_am[j]) {
+                    count++;
+                }
+            }
+        }
+        if(count===0) {
+            return false;
+        } else {
+            return count;
+        }
+    }
+    if(countVowel(arr)>0) {
+        document.write('Số ký tự nguyên âm trong chuỗi là ' + countVowel(arr));
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+function findNumber(number,arr){
+        for (let i =0;i< arr.length;i++){
+            if (number==arr[i]){
+               return i ;
+            }
+        }
+    }
+
+function findIndex(){
+       let index = [];
+       for (let i = 0; i < arr.length; i++) {
+           if (findNumber(arr[i])){
+               index.push(i)
+           }
+       }return index;
+   }
+
+   let index = findIndex(arr)
+    document.write(index)
+</script>
+</body>
+</html>
