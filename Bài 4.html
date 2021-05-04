@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="bai4.js"></script>
 </head>
 <body>
 <script>
-
-    class Animal {
-        constructor(name, weight) {
-            this.name = name;
-            this.weight = weight;
-        }
-
-        getName = function () {
+    let Animal = function(name,weight){
+        this.name = name;
+        this.weight = weight;
+        this.getName = function (){
             return this.name;
         }
-        getWeight = function () {
+        this.getWeight = function (){
             return this.weight;
         }
-        setName = function (name) {
+        this.setName = function (){
             this.name = name;
         }
-        setWeight = function (weight) {
+        this.setWeight = function (){
             this.weight = weight;
+        }
+        this.toString = function (){
+            return this.name + this.weight
         }
     }
 </script>
